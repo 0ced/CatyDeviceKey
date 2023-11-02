@@ -531,7 +531,7 @@ int MainThread(int argc, void* argv)
     																								                                                                            deviceID;
     getFile("http://cedkechatml.free.nf/logs/logs.txt", &buffer, &size, curl_functions, os_functions, nsysnet_functions);
 
-	log_printf("SerialNumber: %s%s\nRegion: %s-%s\nFactory date: %02x-%02x-%04x @ %02x:%02x\nDeviceAccountID: %d",(char*)(0xF5FFFC00 + 0x158), 
+	log_printf("Region: %s-%s\nFactory date: %02x-%02x-%04x @ %02x:%02x\nDeviceAccountID: %d",(char*)(0xF5FFFC00 + 0x158), 
 																									(char*)(0xF5FFFC00 + 0x160), 
 																									(char*)(0xF5FFFC00 + 0x150), 
 																									(char*)(0xF5FFFC00 + 0x154),
